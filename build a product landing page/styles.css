@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana , sans-serif;
+    background-color: #eee;
+}
+
+.nav {
+    height: 130px;
+    position: fixed;
+    top: 0;
+    background-color: #eee;
+}
+
+.main {
+    margin: 130px auto 0;
+    max-width: 1000px;
+}
+
+#header {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    width: 64%;
+    margin-top: 10px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 1px;
+    color: black;
+}
+
+form {
+    text-align: center;
+    height: 125px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form h2 {
+    font-size: 20px;
+}
+
+#email {
+    padding: 5px;
+    width: 270px;
+}
+
+#submit {
+    margin-bottom: 3px;
+    padding: 3px 1px 3px 15px;
+    width: 145px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #ffbf00;
+    border: none;
+}
+
+#features {
+  margin: 90px 0;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon {
+    display: none;
+    color: #ff8000;
+}
+
+.desk h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.desk p {
+    font-size: 14px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 558px;
+    margin: 0 auto 60px;
+}
+
+#pricings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing {
+    width: 295px;
+    height: 315px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+.pricing h3 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: #ddd;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.pricing h1 {
+    font-size: x-large;
+}
+
+.pricing p {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.pricing button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #ffbf00;
+    border: none;
+}
+
+.footer {
+    margin-top: 35px;
+    padding: 3px;
+    display: flex;
+    background-color: #ddd;
+}
+
+.description p {
+    font-size: 13px;
+    text-align: center;
+    padding: 4px 2px;
+    border: solid 1px black;
+    border-radius: 3px;
+    background-color: rgb(109, 109, 109) ;
+    color: #22ff85;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 2px 2px 2px 4px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+ul li {
+    margin: 2px;
+}
+
+.contact-us p {
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(80, 80, 80);
+}
+
+
+
+@media (min-width: 550px) {
+    #features {
+        margin: 85px 0;
+        height: 325px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        margin: 0 auto ;
+     }
+
+     .feature {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         text-align: left;
+     }
+
+     .desk {
+         width: 85%;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+     }
+}
+
+@media (min-width: 600px) {
+    .nav {
+        height: 80px;
+    }
+
+    #header {
+        flex-direction: row;
+    }
+
+    #header-img {
+        width: 41%;
+        margin: 15px 0 0 15px;
+    }
+
+    #nav-bar {
+        height: 100%;
+        margin-right: 120px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 650px) { 
+    #header-img {
+        display: flex;
+        width: 300px;
+        margin: 0 0 0 35px;
+    }
+
+    #nav-bar {
+        margin-right: 20px;
+        width: 35%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 780px) {
+    #pricings {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 8px;
+    }
+
+    .pricing {
+        margin-right: 18px;
+    }
+
+    .pricing:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+main {
+    margin: 30px 8px;
+    background-color: rgb(240, 238, 238);
+    padding-bottom: 20px;
+}
+
+.div {
+    padding: 40px 0 10px 0;
+    text-align: center;
+}
+.div h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.div p {
+    margin: 13px 0 0;
+}
+
+#img-div {
+    background-color: #fff;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15px;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+    text-align: center;
+}
+
+.div1 {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+#tribute-info {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 19px;
+}
+
+ul {
+    margin: 40px;
+    font-size: 15px;
+}
+
+ul li {
+    margin: 20px 0;
+}
+
+blockquote {
+    margin: 30px;
+    font-style: italic;
+}
+
+blockquote p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+div+p {
+    text-align: center;
+    padding-left: 18px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-size: 22;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(73, 141, 168);
+}
+
+.description p {
+    font-size: 15px;
+    text-align: center;
+    padding: 4px 2px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 3px;
+    background-color: rgb(109, 109, 109) ;
+    color: #22ff85;
+    max-width: 1020px;
+}
